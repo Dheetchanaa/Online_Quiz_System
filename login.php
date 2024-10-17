@@ -26,7 +26,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- Link to login-specific CSS -->
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
@@ -42,10 +41,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="submit" value="Login"><br><br>
         </form>
 
-        <!-- Display error message if login fails -->
         <?php if(isset($error)) echo "<p class='error'>$error</p>"; ?>
 
-        <!-- Link to registration page -->
         <p>Don't have an account? <a href="register.php">Register</a></p>
     </div>
 </body>

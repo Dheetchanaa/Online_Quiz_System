@@ -1,4 +1,4 @@
-/* General styling for body */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -10,17 +10,15 @@ body {
     height: 100vh;
 }
 
-/* Container styling for the registration form */
 .container {
     width: 400px;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    background: linear-gradient(135deg, #ff512f, #f09819); /* Orange to yellow gradient */
+    background: linear-gradient(135deg, #ff512f, #f09819); 
     color: #fff;
 }
 
-/* Form styling */
 form {
     display: flex;
     flex-direction: column;
@@ -54,7 +52,6 @@ input[type="submit"]:hover {
     background-color: #f0f0f0;
 }
 
-/* Link styling */
 p a {
     color: #fff;
     text-decoration: none;
@@ -64,7 +61,6 @@ p a:hover {
     text-decoration: underline;
 }
 
-/* Error message styling */
 p.error {
     color: #ffcccc;
     font-size: 14px;

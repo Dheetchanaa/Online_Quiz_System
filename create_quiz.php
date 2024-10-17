@@ -101,14 +101,14 @@ $conn->close();
             </tr>
             <?php foreach ($questions as $q): ?>
             <tr>
-                <td><?php echo htmlspecialchars($q['question']); ?></td>
+                <td><?php echo $q['question']; ?></td>
                 <td>
-                    1. <?php echo htmlspecialchars($q['option1']); ?><br>
-                    2. <?php echo htmlspecialchars($q['option2']); ?><br>
-                    3. <?php echo htmlspecialchars($q['option3']); ?><br>
-                    4. <?php echo htmlspecialchars($q['option4']); ?>
+                    1. <?php echo $q['option1']; ?><br>
+                    2. <?php echo $q['option2']; ?><br>
+                    3. <?php echo $q['option3']; ?><br>
+                    4. <?php echo $q['option4']; ?>
                 </td>
-                <td><?php echo htmlspecialchars($q['correct_answer']); ?></td>
+                <td><?php echo $q['correct_answer']; ?></td>
                 <td>
                     <form method="POST" action="delete_question.php">
                         <input type="hidden" name="question_id" value="<?php echo $q['id']; ?>">

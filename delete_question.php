@@ -13,5 +13,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['question_id'])) {
     header("Location: create_quiz.php");
     exit;
 }
-
 $conn->close();
